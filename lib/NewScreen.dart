@@ -36,11 +36,11 @@ class _NewScreenState extends State<NewScreen>
       appBar: AppBar(
         title: "Welcome".text.fontWeight(FontWeight.normal).black.make(),
         centerTitle: true,
-        leading: LeadingIcon().p(10),
+        leading: const LeadingIcon().p(10),
         backgroundColor: Vx.gray200,
         actions: [
           VxCircle(
-            child: Icon(
+            child: const Icon(
               Icons.notification_add_outlined,
               color: Vx.black,
             ),
@@ -55,7 +55,7 @@ class _NewScreenState extends State<NewScreen>
         [
           15.heightBox,
           Slidable(
-            endActionPane: ActionPane(motion: DrawerMotion(), children: [
+            endActionPane: const ActionPane(motion: DrawerMotion(), children: [
               SlidableAction(
                 onPressed: null,
                 backgroundColor: Vx.red400,
@@ -110,7 +110,7 @@ class _NewScreenState extends State<NewScreen>
               HStack([
                 VxBox(
                   child: HStack([
-                    Icon(
+                    const Icon(
                       FontAwesomeIcons.download,
                       size: 15,
                       color: Vx.white,
@@ -129,7 +129,7 @@ class _NewScreenState extends State<NewScreen>
                 20.widthBox,
                 VxBox(
                   child: HStack([
-                    Icon(
+                    const Icon(
                       CupertinoIcons.arrow_up_right,
                       size: 18,
                       color: Vx.white,
@@ -159,7 +159,7 @@ class _NewScreenState extends State<NewScreen>
             trailing: VxCircle(
                 radius: 30,
                 backgroundColor: Vx.white,
-                child: FittedBox(
+                child: const FittedBox(
                   fit: BoxFit.none,
                   child: Icon(
                     CupertinoIcons.arrow_right,
@@ -173,7 +173,8 @@ class _NewScreenState extends State<NewScreen>
                   child: VStack([
             5.heightBox,
             Slidable(
-              endActionPane: ActionPane(motion: DrawerMotion(), children: [
+              endActionPane:
+                  const ActionPane(motion: DrawerMotion(), children: [
                 SlidableAction(
                   onPressed: null,
                   icon: Icons.notifications_none,
@@ -187,7 +188,7 @@ class _NewScreenState extends State<NewScreen>
               ]),
               child: ListTile(
                 leading: HStack([
-                  Icon(
+                  const Icon(
                     Icons.credit_card,
                     color: Vx.black,
                   ),
@@ -208,7 +209,7 @@ class _NewScreenState extends State<NewScreen>
                 ]),
                 trailing: HStack([
                   "\$187.0".text.black.bold.make(),
-                  Icon(
+                  const Icon(
                     CupertinoIcons.arrow_right_to_line,
                     size: 15,
                   )
@@ -217,7 +218,7 @@ class _NewScreenState extends State<NewScreen>
             ),
             ListTile(
               leading: HStack([
-                Icon(
+                const Icon(
                   CupertinoIcons.money_dollar_circle_fill,
                   color: Vx.green500,
                 ),
@@ -236,7 +237,7 @@ class _NewScreenState extends State<NewScreen>
               ]),
               trailing: HStack([
                 "\$187.0".text.black.bold.make(),
-                Icon(
+                const Icon(
                   CupertinoIcons.arrow_right_to_line,
                   size: 15,
                 )
@@ -244,7 +245,7 @@ class _NewScreenState extends State<NewScreen>
             ),
             ListTile(
               leading: HStack([
-                Icon(
+                const Icon(
                   CupertinoIcons.bitcoin_circle,
                   color: Vx.orange400,
                 ),
@@ -263,7 +264,7 @@ class _NewScreenState extends State<NewScreen>
               ]),
               trailing: HStack([
                 "\$187.0".text.black.bold.make(),
-                Icon(
+                const Icon(
                   CupertinoIcons.arrow_right_to_line,
                   size: 15,
                 )
@@ -271,7 +272,7 @@ class _NewScreenState extends State<NewScreen>
             ),
             ListTile(
               leading: HStack([
-                Icon(
+                const Icon(
                   CupertinoIcons.creditcard_fill,
                   color: Vx.red500,
                 ),
@@ -290,7 +291,7 @@ class _NewScreenState extends State<NewScreen>
               ]),
               trailing: HStack([
                 "\$187.0".text.black.bold.make(),
-                Icon(
+                const Icon(
                   CupertinoIcons.arrow_right_to_line,
                   size: 15,
                 )
@@ -318,29 +319,29 @@ class _NewScreenState extends State<NewScreen>
           automaticIndicatorColorAdjustment: true,
           tabs: [
             VxCircle(
-                child: Icon(Icons.home, color: Vx.blue100),
-                gradient: LinearGradient(
+                child: const Icon(Icons.home, color: Vx.blue100),
+                gradient: const LinearGradient(
                     colors: [Vx.blue900, Vx.blue800],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight),
                 radius: 50),
             VxCircle(
                 child: Icon(Icons.person_add_alt, color: Vx.blue100),
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                     colors: [Vx.blue900, Vx.blue800],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight),
                 radius: 50),
             VxCircle(
-                child: Icon(Icons.wallet_giftcard, color: Vx.blue100),
-                gradient: LinearGradient(
+                child: const Icon(Icons.wallet_giftcard, color: Vx.blue100),
+                gradient: const LinearGradient(
                     colors: [Vx.blue900, Vx.blue800],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight),
                 radius: 50),
             VxCircle(
-                child: Icon(Icons.favorite, color: Vx.blue100),
-                gradient: LinearGradient(
+                child: const Icon(Icons.favorite, color: Vx.blue100),
+                gradient: const LinearGradient(
                     colors: [Vx.blue900, Vx.blue800],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight),

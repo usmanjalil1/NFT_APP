@@ -11,7 +11,7 @@ class LeadingIcon extends StatelessWidget {
       child: ZStack([
         VxCircle(
           child: FittedBox(
-              child: Icon(
+              child: const Icon(
                 CupertinoIcons.infinite,
                 color: Vx.gray300,
               ).p(8),
